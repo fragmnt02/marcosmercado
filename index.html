@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Marcos Mercado</title>
+</head>
+
+<body>
+    <!-- Inicio Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light padding-20 custom-navbar">
+        <a class="navbar-brand" href="/">
+            <img alt="" class="logo" src="/public/logo.png" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link custom-link" href="/proyectos.html">Proyectos</a>
+                <a class="nav-item nav-link custom-link" href="/contacto.html">Contacto</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin Header -->
+    <!-- Inicio Contenido -->
+    <video src="/public/LaSalle.mp4" autoplay muted class="video" loop></video>
+    <div class="index-content">
+        <blockquote class="blockquote">
+            <p class="mb-0">Mi punto de partida siempre es descubrir cómo podemos armonizar un edificio con el
+                terreno con la mayor sutileza y matiz posible.</p>
+            <footer class="blockquote-footer">Marcos <cite title="Source Title">Mercado</cite></footer>
+        </blockquote>
+        <button type="button" class="btn btn-outline-primary proy-btn" onclick="irAProyectos()">Proyectos</button>
+    </div>
+    <!-- Fin Contenido -->
+    <!-- Inicio Footer -->
+    <footer class="text-center footer-style">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-col">
+                    <h3>Dirección</h3>
+                    <p>
+                        Bucareli 68 int 510, Colonia Centro, Juárez, Cuauhtémoc, 06040 Ciudad de México
+                    </p>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <h3>Contacto</h3>
+                    <p><a href="tel:+525541862991">Tel. 55 4186 2991</a></p>
+                    <p><a href="mailto:marcosm06@gmail.com">Mail: Marcosm06@gmail.com</a></p>
+                    <p><a href="/contacto.html">Sección de contacto de este sitio web</a></p>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <h3>Créditos</h3>
+                    <p>Todo el material y contenido multimedia del sitio web, fue realizado por: Linda Encarcega</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin Footer -->
+    <script>
+        function irAProyectos() {
+            window.location.replace('/proyectos.html')
+        }
+    </script>
+</body>
+
+</html>

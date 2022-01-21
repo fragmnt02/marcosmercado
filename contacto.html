@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <!-- Inicio Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light padding-20">
+        <a class="navbar-brand" href="/"><img alt="" class="logo" src="/public/logo.png" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/proyectos.html">Proyectos</a>
+                <b><a class="nav-item nav-link active" href="/contacto.html">Contacto</a></b>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin Header -->
+    <!-- Inicio Contenido -->
+    <h1 class="main-title">Contacto</h1>
+    <form class="needs-validation padding-x-50 contacto" id="myForm">
+
+        <div class="form-row mt-5">
+            <div class="col-md-4 mb-3">
+                <label for="validarNombre">Nombre:<span class="red">*</span></label>
+                <input type="text" class="form-control" id="validarNombre" name="nombre" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="validarApellidos">Apellidos:<span class="red">*</span></label>
+                <input type="text" class="form-control" id="validarApellidos" name="apellidos" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="validarEmail">Email:<span class="red">*</span></label>
+                <input type="email" class="form-control" id="validarEmail" name="email" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="validarTelefono">Teléfono:</label>
+                <input type="number" class="form-control" id="validarTelefono" name="telefono" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="validarTema">Tema:<span class="red">*</span></label>
+                <select class="custom-select" id="validarTema" name="tema" required>
+                    <option selected disabled value="">Selecciona...</option>
+                    <option value="Problema con acceso a Web">Problema con acceso a Web</option>
+                    <option value="Propuesta de colaboración">Propuesta de colaboración</option>
+                    <option value="Otras cuestiones">Otras cuestiones</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="validarAsunto">Asunto:</label>
+                <input type="text" class="form-control" id="validarAsunto" name="asunto" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="validationMensaje">Mensaje:<span class="red">*</span></label>
+            <textarea class="form-control" id="validationMensaje" name="mensaje" rows="3" required></textarea>
+        </div>
+
+        <div class="form-group mb-10 submit-buttons">
+            <button class="btn btn-primary" type="submit" name="submit">Enviar</button>
+            <button class="btn btn-success" type="reset" name="reset">Limpiar</button>
+        </div>
+
+    </form>
+    <!-- Fin Contenido -->
+    <!-- Inicio Footer -->
+    <footer class="text-center footer-style">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-col">
+                    <h3>Dirección</h3>
+                    <p>
+                        Bucareli 68 int 510, Colonia Centro, Juárez, Cuauhtémoc, 06040 Ciudad de México
+                    </p>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <h3>Contacto</h3>
+                    <p><a href="tel:+525541862991">Tel. 55 4186 2991</a></p>
+                    <p><a href="mailto:marcosm06@gmail.com">Mail: Marcosm06@gmail.com</a></p>
+                    <p><a href="/contacto.html">Sección de contacto de este sitio web</a></p>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <h3>Créditos</h3>
+                    <p>Todo el material y contenido multimedia del sitio web, fue realizado por: Linda Encarcega</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin Footer -->
+    <script>
+        var form = document.getElementById("myForm");
+        function handleForm(event) {
+            event.preventDefault();
+            var nombre = event.target.elements['nombre'].value;
+            var apellidos = event.target.elements['apellidos'].value;
+            var email = event.target.elements['email'].value;
+            var telefono = event.target.elements['telefono'].value;
+            var tema = event.target.elements['tema'].value;
+            var asunto = event.target.elements['asunto'].value;
+            var mensaje = event.target.elements['mensaje'].value;
+            var mailTo = document.createElement("a");
+            var body = `
+                Nombre: ${nombre} ${apellidos}
+                Email: ${email}
+                Teléfono: ${telefono}
+
+                ${mensaje}
+            `;
+            var subject = `${tema} - ${asunto}`;
+            mailTo.href = `mailto:Marcosm06@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}.`;
+            mailTo.click();
+        }
+        form.addEventListener('submit', handleForm);
+
+    </script>
+</body>
+
+</html>
